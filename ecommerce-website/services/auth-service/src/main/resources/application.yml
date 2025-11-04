@@ -1,0 +1,18 @@
+
+server:
+  port: 8081
+spring:
+  application:
+    name: auth-service
+jwt:
+  secret: dev-very-secret-key-change-me
+  expiration-ms: 3600000
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/ecommerce
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
